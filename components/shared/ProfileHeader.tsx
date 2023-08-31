@@ -6,9 +6,10 @@ interface Props{
     imgUrl:string,
     bio:string,
     username:string,
+    type?: 'User' | 'Community'
 }
 
-const ProfileHeader = ({accountId,authUserId,name,username,imgUrl,bio}:Props) => {
+const ProfileHeader = ({accountId,authUserId,name,username,imgUrl,bio,type}:Props) => {
     return(
         <div className="flex w-full flex-col justify-start">
             <div className="flex items-center justify-between">
